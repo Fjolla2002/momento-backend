@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: momento
+  datasource:
+    url:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: momento
+      username: admin
+      password: admin
+      uuid-representation: standard
+      auto-index-creation: true
+s3:
+  endpoint: "http://minio:9000"
+  bucket: "momento"
+  region: "eu-central-1"
+  upload-signature-duration: 5
+  download-signature-duration: 1440
